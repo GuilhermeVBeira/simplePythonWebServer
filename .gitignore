@@ -3,7 +3,7 @@
 *.sqlite3
 *.cpython-34.pyc
 *.mo
+.vscode/*
 *~
-
 .env
-db.sqlite3
+database.db
