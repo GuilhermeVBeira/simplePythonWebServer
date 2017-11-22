@@ -2,7 +2,7 @@
 
 ### Instaçação
 
-- Clone o repositorio [git](https://git-scm.com/download/linux)
+- Clone o repositório
 - instale o  python>=3.5 e o [Pip](https://pypi.python.org/pypi/pip)
 - instale [Virtualenv](https://virtualenv.pypa.io/en/stable/)
 - dentro da pasta simplePythonWebServer crie um virtualenv com os seguintes comandos 
