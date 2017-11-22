@@ -1,2 +1,9 @@
-.vscode
-__pycache__
+*.pyc
+*.pyo
+*.sqlite3
+*.cpython-34.pyc
+*.mo
+*~
+
+.env
+db.sqlite3
