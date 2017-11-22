@@ -5,13 +5,23 @@
 - Clone o repositorio [git](https://git-scm.com/download/linux)
 - instale o  python>=3.5 e o [Pip](https://pypi.python.org/pypi/pip)
 - instale [Virtualenv](https://virtualenv.pypa.io/en/stable/)
-- dentro do diretório crie um virtualenv com os seguintes comandos 
+- dentro da pasta simplePythonWebServer crie um virtualenv com os seguintes comandos 
     ```
     $ virtualenv env -p python3
+    ```
+- Caso use windows 
+    ```
+    $ env\Script\activate
+    ```
+- Caso use linux
+    ```
     $ source env/bin/activate
+    ```
+- e instale as dependências
+    ```
     $ pip install -r requeriments.txt
     ```
-- rode o servidor
+ - rode o servidor
     ```
     $ python run.py
     ```
