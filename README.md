@@ -27,7 +27,5 @@ Por padrão o banco escolhido é o sqlite3, por ser um projeto pequeno, mas caso
 #### Mudar de IP e Porta:
 Ao chamar o servidor passe a ip e a porta que queira
 
-    ```
     $ python run.py 192.168.1.10:8000
-    ```
     
