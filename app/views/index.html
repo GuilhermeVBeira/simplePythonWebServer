@@ -2,261 +2,82 @@
 <html>
 
 <head>
-	<meta charset="UTF-8" />
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" type="text/css" href="static/css/app.css">
 </head>
-<style>
-	.list-person {
-		position: inherit;
-	}
-
-	.div-forms {
-		float: left;
-		position: relative;
-	}
-
-	.title {
-		text-align: center;
-		height: 100px;
-	}
-
-	.title h1 {
-		margin-top: 3%;
-	}
-
-	table {
-		font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
-		border-collapse: collapse;
-		width: 100%;
-	}
-
-	table td,
-	table th {
-		border: 1px solid #ddd;
-		padding: 8px;
-	}
-
-	table tr:nth-child(even) {
-		background-color: #f2f2f2;
-	}
-
-	table tr:hover {
-		background-color: #ddd;
-	}
-
-	table th {
-		padding-top: 12px;
-		padding-bottom: 12px;
-		text-align: left;
-		background-color: #4CAF50;
-		color: white;
-	}
-
-	input[type=text],
-	select {
-		width: 100%;
-		padding: 12px 20px;
-		margin: 8px 0;
-		display: inline-block;
-		border: 1px solid #ccc;
-		border-radius: 4px;
-		box-sizing: border-box;
-	}
-
-	input[type=submit],
-	input[type=reset] {
-		width: 100%;
-		background-color: #4CAF50;
-		color: white;
-		padding: 14px 20px;
-		margin: 8px 0;
-		border: none;
-		border-radius: 4px;
-		cursor: pointer;
-	}
-
-	input[type=submit]:hover {
-		background-color: #45a049;
-	}
-
-	div {
-		border-radius: 5px;
-		padding: 15px;
-	}
-
-	body {
-		background-color: #f2f2f2;
-	}
-</style>
 
 <body>
-	<div class="title">
-		<h1>Single page application</h1>
-	</div>
-	<div class="body-of-element">
-		<div class="div-forms">
-			<form class="form-create" method="POST" action="/createperson">
-				<fieldset>
-					<legend>Person</legend>
-					<div class="">
-						<label class="" for="">Name</label>
-						<div class="">
-							<input id="firstname" name="firstname" type="text" placeholder="" class="">
-						</div>
-						<label class="" for="">Last Name</label>
-						<div class="">
-							<input id="lastname" name="lastname" type="text" placeholder="" class="">
-						</div>
-						<label class="" for="">Adress</label>
-						<div class="">
-							<input id="adress" name="adress" type="text" placeholder="" class="">
-						</div>
-						<div class="">
-							<input type="reset" id='reset' name="b2" value="Reset">
-							<input type="submit" id="submit" name="b1" value="Save">
-						</div>
-					</div>
-				</fieldset>
-			</form>
-		</div>
-		<div class="list-person">
-			<fieldset>
-				<legend>List Person</legend>
+    <div class="title">
+        <h1>Single page application</h1>
+    </div>
+    <div class="body-of-element">
+        <div class="div-forms">
+            <form class="form-create" method="POST" action="/createperson">
+                <fieldset>
+                    <legend>Person</legend>
+                    <div class="">
+                        <label class="" for="">Name</label>
+                        <div class="">
+                            <input id="firstname" name="firstname" type="text" placeholder="" class="">
+                        </div>
+                        <label class="" for="">Last Name</label>
+                        <div class="">
+                            <input id="lastname" name="lastname" type="text" placeholder="" class="">
+                        </div>
+                        <label class="" for="">Address</label>
+                        <div class="">
+                            <input id="address" name="address" type="text" placeholder="" class="">
+                        </div>
+                        <div class="">
+                            <input type="reset" id='reset' name="b2" value="Reset">
+                            <input type="submit" id="submit" name="b1" value="Save">
+                        </div>
+                    </div>
+                </fieldset>
+            </form>
+        </div>
+        <div class="list-person">
+            <fieldset>
+                <legend>List Person</legend>
 
-				<div class="">
-					<div class="">
-						<table class="">
-							<thead>
-								<tr>
-									<th>
-										#
-									</th>
-									<th>
-										First Name
-									</th>
-									<th>
-										Last Name
-									</th>
-									<th>
-										Adrees
-									</th>
-									<th>
-										Edit
-									</th>
-									<th>
-										Delete
-									</th>
-								</tr>
-							</thead>
-							<tbody>
+                <div class="">
+                    <div class="">
+                        <table class="">
+                            <thead>
+                                <tr>
+                                    <th>
+                                        #
+                                    </th>
+                                    <th>
+                                        First Name
+                                    </th>
+                                    <th>
+                                        Last Name
+                                    </th>
+                                    <th>
+                                        Adrees
+                                    </th>
+                                    <th>
+                                        Edit
+                                    </th>
+                                    <th>
+                                        Delete
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody>
 
-							</tbody>
-						</table>
-					</div>
-				</div>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
 
-			</fieldset>
-		</div>
-	</div>
+            </fieldset>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+     crossorigin="anonymous"></script>
+    <script type="text/javascript" src="static/js/app.js"></script>
 </body>
 
 </html>
-<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
- crossorigin="anonymous"></script>
-<script>
-	function refreshPessoas() {
-		$.ajax({
-			type: "POST",
-			url: '/getpersons',
-			dataType: "JSON",
-			data: $("form").serialize(), // serializes the form's elements.
-			success: function (data) {
-				var table_row = '';
-				for (var i = 0; i < data.length; i++) {
-					var obj = data[i];
-					table_row += '<tr>';
-					table_row += '<td>';
-					table_row += obj.id;
-					table_row += '</td>';
-					table_row += '<td>';
-					table_row += obj.firstname
-					table_row += '</td>';
-					table_row += '<td>';
-					table_row += obj.lastname
-					table_row += '</td>';
-					table_row += '<td>';
-					table_row += obj.adress
-					table_row += '</td>';
-					table_row += '<td>';
-					table_row += '<input class="edit" person_id="' + obj.id + '" type="button" name="b2" value="Edit">'
-					table_row += '</td>';
-					table_row += '<td>';
-					table_row += '<input class="delete" person_id="' + obj.id + '" type="button" name="b2" value="Delete">'
-					table_row += '</td>';
-					table_row += '</tr>';
-				}
-				$('tbody').html(table_row);
-			}
-		});
-
-	}
-	$('#reset').on('click', function () {
-		$('#submit').val('Save');
-		$('#id').val('');
-		$('form').attr('action', '/createperson')
-		$('#id').remove();
-	});
-
-	$('form', $(document)).submit(function (e) {
-		validador()
-		$.ajax({
-			type: "POST",
-			url: $(this).attr('action'),
-			dataType: "JSON",
-			contentType: "application/json;charset=utf-8",
-			data: $("form").serialize(), // serializes the form's elements.
-			complete: function () {
-				refreshPessoas();
-				$('#reset').click();
-			}
-		});
-		e.preventDefault(); // avoid to execute the actual submit of the form.
-	});
-	$(document).on('click', '.delete', function () {
-		var person_id = $(this).attr('person_id');
-		$.ajax({
-			type: "POST",
-			url: '/deleteperson',
-			dataType: "JSON",
-			data: { 'id': person_id }, // serializes the form's elements.
-			complete: function () {
-				refreshPessoas();
-
-			}
-		});
-	})
-	$(document).on('click', '.edit', function () {
-		var person_id = $(this).attr('person_id');
-		input = '<input type="hidden" id="id" name="id" value="' + person_id + '">';
-		$('form').append(input);
-		$.ajax({
-			type: "POST",
-			url: '/getperson',
-			dataType: "JSON",
-			data: { 'id': person_id }, // serializes the form's elements.
-			success: function (data) {
-				console.log(data);
-				$('#id').val(data.id);
-				$('#firstname').val(data.firstname);
-				$('#lastname').val(data.lastname);
-				$('#adress').val(data.adress);
-				$('#submit').val('Update');
-				$('form').attr('action', '/editperson');
-
-			}
-		});
-	});
-	function validador(){
-		console.log($("form").serialize());
-	}
-	refreshPessoas();
-</script>
