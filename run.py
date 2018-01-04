@@ -1,17 +1,11 @@
-import sys, os
+import sys
+
 from server import start_server
-from sqlalchemy import create_engine
-from sqlalchemy.orm import relationship, sessionmaker
-from sqlalchemy.ext.declarative import declarative_base
-from app.models.tables import DataBase
-from app.settings import DATA_BASE
+from app.models import DataBase
+from app.settings import CONNECTION_STRING
+
 
 if __name__ == '__main__':
-    PORT = "8080"
-    HOST = "0.0.0.0"
-    db = DataBase(DATA_BASE)
-    db.boot_database()
-    try :
-        start_server(sys.argv[1])
-    except :
-        start_server("%s:%s" % (HOST,PORT))
+    server_params = sys.argv[1] if len(sys.argv) > 1 else "0.0.0.0:8080"
+    DataBase(CONNECTION_STRING).boot()
+    start_server(server_params)
